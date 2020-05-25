@@ -51,6 +51,7 @@ p {
   .slider-inner img {
     display: none;
     width: 95vw;
+    height: -webkit-fill-available;
   }
 
   .slider-inner img.first-img {
@@ -103,6 +104,7 @@ p {
   .slider-inner img {
     display: none;
     width: 95vw;
+    height: -webkit-fill-available;
   }
 
   .slider-inner img.first-img {
@@ -274,12 +276,12 @@ p {
   }
 
   .bio h2 {
-    font-size: 15vw;
+    font-size: 10vw;
     padding: 1rem;
   }
 
   .bio p {
-    font-size: 2vw;
+    font-size: 5vw;
     padding: 0 40px;
   }
 }

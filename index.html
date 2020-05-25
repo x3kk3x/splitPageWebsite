@@ -4,7 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Split-Page</title>
+     
+    <!-- JQuerry -->
     <link rel="stylesheet" href="css/style.css" />
+    <script
+       src="https://code.jquery.com/jquery-3.5.1.js"
+       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+       crossorigin="anonymous">
+      </script>
+      
+      <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
     <link rel="icon" href="/icons/layout.png" />
   </head>
@@ -21,7 +30,7 @@
               <br> Hey, what's that flashing button?
             </p>
           </div>
-          <img src="img/black-bg-photo.png" alt="" />
+          <img src="img/Split-Page/black-bg-photo.png" alt="" />
         </div>
       </div>
       <div class="layer top">
@@ -32,18 +41,34 @@
               Well, Good day, everybody! <br>
               <br>
                Welcome to Day 1848 aboard the Visual Studio Code Planet...
-               As always, the weather is a balmy 24 celsius and sunny, and, uh... 
+               As always, the weather is a balmy 24 celsius and sunny
+               <br> and, uh... 
                <br>
                <br>
                 Oh, I see the ship's log is showing that today is the 700th anniversary of our five year cruise.
             </p>
           </div>
-          <img class="pic-one" src="img/white-bg-photo.png" alt="" />
+          <img class="pic-one" src="/img/Split-Page/white-bg-photo.png" alt="" />
         </div>
       </div>
       <div class="handle"></div>
     </section>
     <!-- Split Page Ends!-->
+
+    <!-- Image Slider -->
+    <div class="carousell">
+      <div class="slider-outer">
+        <img src="/img/Carousell/arrow-left.png" class="prev" alt="Prev">
+        <div class="slider-inner">
+          <img src="img/Carousell/coding-a.jpg" class="first-img">
+          <img src="img/Carousell/coding-b.jpg">
+          <img src="img/Carousell/coding-c.jpg">
+          <img src="img/Carousell/coding-d.jpg">
+          <img src="img/Carousell/coding-e.jpg" class="last-img">
+        </div>
+        <img src="/img/Carousell/arrow-right.png" class="next" alt="Next">
+      </div>
+    </div>
 
     <!-- Biography Section Starts-->
     <div class="bio">
@@ -109,13 +134,6 @@
     </section>
     <!-- About Me - Section Ends-->
 
-    <!-- Github Profile Section Starts-->
-    <div class="profile-gh">
-      <h2>Checkout My Github Profile</h2> 
-      <a class="button" href="https://github.com/x3kk3x?tab=repositories">Go To Github</a>
-    </div>
-    <!-- Github Profile Section Ends-->
-
     <!-- Contact Section Starts-->
     <div class="contact">
       <h2>Let's Get In Touch!</h2>
@@ -134,6 +152,7 @@
     <footer id="main-footer">
       Copyright &copy; 2020 
     </footer>
+     <!-- Footer Ends-->
     <script src="/main.js"></script>
   </body>
 </html>

@@ -26,26 +26,40 @@ function closeSlideMenu() {
   document.getElementById("side-menu").style.width = "0";
 }
 
-const menuBtn = document.querySelector(".menu-btn");
-let menuOpen = false;
-menuBtn.addEventListener("click", () => {
-  if (!menuOpen) {
-    menuBtn.classList.add("open");
-    menuOpen = true;
-  } else {
-    menuBtn.classList.remove("open");
-    menuOpen = false;
-  }
-});
+/* Function for Image Slider*/
 
-var navbarCollapse = function () {
-  if ($("#mainNav").offset().top > 100) {
-    $("#mainNav").addClass("navbar-scrolled");
-  } else {
-    $("#mainNav").removeClass("navbar-scrolled");
-  }
-};
-// Collapse now if page is not at top
-navbarCollapse();
-// Collapse the navbar when page is scrolled
-$(window).scroll(navbarCollapse);
+$(document).ready(function () {
+  $(".next").click(function () {
+    var currentImg = $(".active");
+    var nextImg = currentImg.next();
+
+    if (nextImg.length) {
+      currentImg.removeClass("active").fadeOut(200).css("z-index", "-10");
+      nextImg.addClass("active").delay(200).fadeIn(200).css("z-index", "10");
+    } else {
+      currentImg.removeClass("active").fadeOut(200).css("z-index", "-10");
+      $(".first-img")
+        .addClass("active")
+        .delay(200)
+        .fadeIn(200)
+        .css("z-index", "10");
+    }
+  });
+
+  $(".prev").click(function () {
+    var currentImg = $(".active");
+    var prevImg = currentImg.prev();
+
+    if (prevImg.length) {
+      currentImg.removeClass("active").fadeOut(200).css("z-index", "-10");
+      prevImg.addClass("active").delay(200).fadeIn(200).css("z-index", "10");
+    } else {
+      currentImg.removeClass("active").fadeOut(200).css("z-index", "-10");
+      $(".last-img")
+        .addClass("active")
+        .delay(200)
+        .fadeIn(200)
+        .css("z-index", "10");
+    }
+  });
+});

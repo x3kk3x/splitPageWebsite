@@ -53,7 +53,16 @@ $(window).on("scroll", function () {
 
 /* Function for Image Slider*/
 
+function setDaysSinceRelease() {
+  var date1 = new Date('4/29/2015');
+  var date2 = new Date();
+  var diffDays = Math.ceil(Math.abs(date2 - date1) / (1000 * 60 * 60 * 24));
+  $("#release-date").text(parseInt(diffDays));
+}
+
 $(document).ready(function () {
+  setDaysSinceRelease();
+
   $(".next").click(function () {
     var currentImg = $(".active");
     var nextImg = currentImg.next();

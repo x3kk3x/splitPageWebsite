@@ -1,3 +1,18 @@
+/* Function for Days Since Release Visual */
+
+function setDaysSinceRelease() {
+  var date1 = new Date("4/29/2015");
+  var date2 = new Date();
+  var diffDays = Math.ceil(Math.abs(date2 - date1) / (1000 * 60 * 60 * 24));
+  $("#release-date").text(parseInt(diffDays));
+}
+
+$(document).ready(function () {
+  setDaysSinceRelease();
+});
+
+/* Function for Split-Page Effect */
+
 document.addEventListener("DOMContentLoaded", function () {
   let wrapper = document.getElementById("wrapper");
   let topLayer = wrapper.querySelector(".top");
@@ -25,6 +40,16 @@ function openSlideMenu() {
 function closeSlideMenu() {
   document.getElementById("side-menu").style.width = "0";
 }
+
+/* Function for Navigation */
+
+$(window).on("scroll", function () {
+  if ($(window).scrollTop()) {
+    $("nav").addClass("black");
+  } else {
+    $("nav").removeClass("black");
+  }
+});
 
 /* Function for Image Slider*/
 
@@ -63,3 +88,20 @@ $(document).ready(function () {
     }
   });
 });
+
+/* Function for Read More Button */
+
+var i = 0;
+function read() {
+  if (!i) {
+    document.getElementById("more").style.display = "inline";
+    document.getElementById("dots").style.display = "none";
+    document.getElementById("read").innerHTML = "Read Less";
+    i = 1;
+  } else {
+    document.getElementById("more").style.display = "none";
+    document.getElementById("dots").style.display = "inline";
+    document.getElementById("read").innerHTML = "Read More";
+    i = 0;
+  }
+}

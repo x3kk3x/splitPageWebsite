@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Split-Page</title>
      
-    <!-- JQuerry -->
+    <!-- CSS, JQuerry and Font -->
+    
     <link rel="stylesheet" href="css/style.css" />
     <script
        src="https://code.jquery.com/jquery-3.5.1.js"
        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
        crossorigin="anonymous">
       </script>
-      
-      <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
     <link rel="icon" href="/icons/layout.png" />
   </head>
   <body>
+ 
     <!-- Split Page Starts-->
     <section id="wrapper" class="skewed">
       <div class="layer bottom">
@@ -25,9 +25,10 @@
           <div class="content-body">
             <h1>Welcome</h1>
             <p>
-              Well, I'm sure our forefathers would be proud to know that 700 years later we'd be doing the exact same thing they were doing. <br>
-               <br> So, be sure next mealtime to ask for your <br> "Free Septuacentennial Cupcake In A Cup"! <br> And, also we got, uhh... <br> 
-              <br> Hey, what's that flashing button?
+              I'm sure our forefathers would be proud to know that 5 years later we'd be doing the exact 
+              same thing they were doing.
+              And that, also we got, uhh... <br> 
+              Hey, what's that flashing button?
             </p>
           </div>
           <img src="img/Split-Page/black-bg-photo.png" alt="" />
@@ -37,16 +38,11 @@
         <div class="content-wrap">
           <div class="content-body">
             <h1>Hearty</h1>
-            <p>
-              Well, Good day, everybody! <br>
-              <br>
-               Welcome to Day 1848 aboard the Visual Studio Code Planet...
-               As always, the weather is a balmy 24 celsius and sunny
-               <br> and, uh... 
-               <br>
-               <br>
-                Oh, I see the ship's log is showing that today is the 700th anniversary of our five year cruise.
-            </p>
+              <p>Well, Good day, everybody... </p>
+              <p>Welcome to Day <span style="color: #f3321d" id="release-date"></span> aboard the Visual Studio Code Planet...</p>
+               <p> As always, the weather is a balmy 24 degrees celsius and sunny! </p>
+               </p>
+              </p>
           </div>
           <img class="pic-one" src="/img/Split-Page/white-bg-photo.png" alt="" />
         </div>
@@ -69,31 +65,32 @@
         <img src="/img/Carousell/arrow-right.png" class="next" alt="Next">
       </div>
     </div>
-
+  
     <!-- Biography Section Starts-->
-    <div class="bio">
+    <div id="short-bio" class="bio">
       <h2 class="bio-h2">Short Biography</h2>
       <hr class="divider" />
       <p>
-        I have great interest in the field of software development. <br>
+        I have great interest in the field of software development.
         Good and growing theoretical knowledge, necessary skills, and also great
-        potential <br> to develop over time and become a quality software
-        developer. <br>
+        potential to develop over time and become a quality software
+        developer. <span id="dots"></span><span id="more">
         My motivation is my desire, my passion, which is paving my path
-        before me. <br> It keeps me driven and helps me to focus my life in the
-        field of software development <br> and am ready to actively develop in
-        that direction throughout my life.<br> While studying at the IT
-        Academy, I had the opportunity to develop my technical skills <br> needed
+        before me. It keeps me driven and helps me to focus my life in the
+        field of software development and am ready to actively develop in
+        that direction throughout my life. While studying at the IT
+        Academy, I had the opportunity to develop my technical skills needed
         to work in this profession.
-        Working on different projects during my studies allowed me to learn <br>
-        from mistakes and made me sure  I won't give in to errors <br> but rather
-        grow a bit taller because of them.
+        Working on different projects during my studies allowed me to learn
+        from mistakes and made me sure  I won't give in to errors but rather
+        grow a bit taller because of them.</span>
       </p>
+      <button type="button" id="read" onclick="read()">Read More</button>
     </div>
      <!-- Biography Section Ends-->
 
       <!-- LinkedIn Profile Section Starts-->
-    <div class="profile-li">
+    <div id="linkedIn" class="profile-li">
       <h2>Checkout My LinkedIn Profile</h2>
       <hr class="divider" />
       <p>
@@ -102,15 +99,15 @@
       <a class="button" href="https://www.linkedin.com/in/danijelvanjo/">Go To LinkedIn</a>
     </div>
     <!-- LinkedIn Profile Section Ends-->
-
+  
     <!-- About Me - Section Starts-->
-    <div class="container">
+    <div id="about" class="container">
     <section id="boxes">
         <div class="box">
           <img src="/icons/book.svg" />
           <h2>I Am</h2>
           <p>
-            Self-motivating, flexible, easy going and ready to adapt <br> to any life
+            Self-motivating, flexible, easy going and ready to adapt to any life
             changes and embrace any challenges!
           </p>
         </div>
@@ -118,16 +115,16 @@
           <img src="/icons/laptop.svg" />
           <h2>Motivated</h2>
           <p>
-            Ready to relocate, work remotely, learn. <br>
-            Eager to find a place where I can grow and improve myself!
+            Ready to relocate, work remotely and hard. Learn anything along the way.
+            Eager to find a place where I can grow and improve!
           </p>
         </div>
         <div class="box">
           <img src="./icons/heart.svg" />
           <h2>Coding With Love</h2>
           <p>
-            Spoonful of smiles, a jar of joy <br> and a cup
-            of coffee will make any software created with love!
+            Spoonful of smiles, a jar of joy and a cup
+            of coffee will make any software created, created with LOVE!
           </p>
         </div>
       </div>
@@ -135,10 +132,10 @@
     <!-- About Me - Section Ends-->
 
     <!-- Contact Section Starts-->
-    <div class="contact">
+    <div id="reach-me" class="contact">
       <h2>Let's Get In Touch!</h2>
       <p>While i'm pretty good with smoke signals there are simpler
-        ways to get in touch with me <br> and for me to answer you ANY question
+        ways to get in touch with me and for me to answer you ANY question
         you may have!
       </p>
       <div class="cont-info">
@@ -150,9 +147,20 @@
 
     <!-- Footer-->
     <footer id="main-footer">
-      Copyright &copy; 2020 
+      Copyright &copy; 2020
     </footer>
      <!-- Footer Ends-->
+     <div class="menu">
+      <nav>
+          <div class="logo">Welcome</div>
+          <ul>
+              <li><a href="#short-bio">Biography</li>
+              <li><a href="#about">About</li>
+              <li><a href="#linkedIn">Work</li>
+              <li><a  href="#reach-me">Contact</li>
+          </ul>
+      </nav>
+    </div>
     <script src="/main.js"></script>
   </body>
 </html>

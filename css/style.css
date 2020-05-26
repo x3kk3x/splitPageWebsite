@@ -10,18 +10,13 @@ body {
   background-color: #f5f5f5;
 }
 
-/* Paragraph */
-
-p {
-  font-size: 1.5vw;
-}
-
 .carousell {
   display: none;
 }
 
 /* Carousell Section Mobile */
-@media screen and (min-width: 320px) and (max-width: 700px) {
+
+@media screen and (min-width: 299px) and (max-width: 750px) {
   #wrapper {
     display: none;
   }
@@ -80,7 +75,7 @@ p {
 
 /* Image Slider Tablet */
 
-@media screen and (min-width: 701px) and (max-width: 1024px) {
+@media screen and (min-width: 751px) and (max-width: 1025px) {
   #wrapper {
     display: none;
   }
@@ -162,6 +157,11 @@ p {
   color: #fff;
 }
 
+.content-body p {
+  text-align: center;
+  font-size: 1.4vw;
+}
+
 /* White and Grey Image and (Title - h1) */
 
 .layer img {
@@ -173,7 +173,7 @@ p {
 }
 
 .layer h1 {
-  font-size: 4vw;
+  font-size: 1vw;
 }
 
 /* Grey Page Section */
@@ -189,7 +189,8 @@ p {
 
 .bottom h1 {
   color: #dd3927;
-  font-size: 5vw;
+  font-size: 4vw;
+  text-align: center;
   text-shadow: 0.1em 0.1em 0.2em black;
 }
 
@@ -197,7 +198,7 @@ p {
 
 .top h1 {
   color: #192a56;
-  font-size: 6vw;
+  font-size: 5vw;
 }
 
 .top {
@@ -219,7 +220,7 @@ p {
   height: 100%;
   display: block;
   background-color: #e74c3c;
-  width: 8px;
+  width: 4px;
   top: 0;
   left: 50%;
   z-index: 3;
@@ -243,7 +244,11 @@ p {
   margin-left: 1000px;
 }
 
-/* Short Biography Section */
+/* Short-Biography */
+
+#read {
+  display: none;
+}
 
 .bio {
   padding: 10rem 0;
@@ -255,7 +260,7 @@ p {
 
 .bio-h2 {
   color: #fff;
-  font-size: 3vw;
+  font-size: 2.5vw;
   padding: 20px;
   line-height: 5rem;
   text-shadow: 0.1em 0.1em 0.2em black;
@@ -263,40 +268,196 @@ p {
 
 .bio p {
   text-align: center;
-  padding: 0 100px;
-  font-size: 2vw;
+  padding: 0 200px;
+  font-size: 1.5vw;
   color: rgba(255, 255, 255, 0.7);
 }
 
 /* Short-Biography Media Querry Mobile */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 299px) and (max-width: 750px) {
   .bio {
     padding: 4rem 0;
   }
 
-  .bio h2 {
-    font-size: 10vw;
-    padding: 1rem;
+  .bio-h2 {
+    font-size: 7vw;
   }
 
   .bio p {
-    font-size: 5vw;
-    padding: 0 40px;
+    padding: 0 10px;
+    line-height: 8vw;
+    margin-bottom: 50px;
+    font-size: 6vw;
+    color: rgba(255, 255, 255, 0.7);
   }
+
+  button {
+    width: 35vw;
+    padding: 0.1rem;
+    text-decoration: none;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    color: #212529;
+    background-color: #fff;
+    cursor: pointer;
+    border: 10px solid transparent;
+    border-radius: 2.5rem;
+    box-shadow: 5px 5px 5px;
+  }
+
+  button:hover {
+    background-color: #343a40;
+    color: #f5f5f5;
+    transition: ease-in-out 0.3s;
+  }
+
+  #read {
+    display: block;
+  }
+
+  #more {
+    display: none;
+  }
+}
+
+/* Short-Biography Media Querry Tablet */
+
+@media screen and (min-width: 751px) and (max-width: 1025px) {
+  .bio {
+    padding: 6rem 0;
+    background-color: #222;
+    text-align: center;
+    border-top: 4px solid #e74c3c;
+  }
+
+  .bio-h2 {
+    margin-top: 50px;
+    font-size: 5vw;
+  }
+
+  .bio p {
+    text-align: center;
+    padding: 0 40px;
+    margin-bottom: 50px;
+    font-size: 4vw;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  #more {
+    display: none;
+  }
+
+  #read {
+    display: block;
+  }
+
+  button {
+    width: 15vh;
+    padding: 0.1rem;
+    text-decoration: none;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-align: center;
+    color: #212529;
+    background-color: #fff;
+    cursor: pointer;
+    border: 10px solid transparent;
+    border-radius: 2.5rem;
+    box-shadow: 5px 5px 5px;
+  }
+
+  button:hover {
+    background-color: #343a40;
+    color: #f5f5f5;
+    transition: ease-in-out 0.3s;
+  }
+}
+
+/* Navigation Menu */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  padding: 10px 100px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+nav.black {
+  background: #000000;
+  height: 90px;
+  padding: 10px 100px;
+  opacity: 0.5;
+}
+
+nav .logo {
+  padding: 10px 20px;
+  float: left;
+  font-size: 1.8vw;
+  transition: 0.3s;
+}
+
+nav.black .logo {
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  line-height: 80px;
+  font-size: 1.4rem;
+  color: #151515;
+  padding: 20px 15px;
+  text-decoration: none;
+  transition: 0.3s;
+  text-transform: capitalize;
+}
+
+nav.black ul li a {
+  color: #fff;
+}
+
+nav ul li a:focus {
+  outline: none;
+}
+
+nav ul li a .active {
+  background: #e2472f;
+  color: #fff;
+  padding: 20px 30px;
+  border-radius: 1.5vh;
 }
 
 /* LinkedIn Profile Section */
 
 .profile-li {
   background: #e74c3c;
-  padding: 10rem 0;
+  padding: 8rem 0;
   box-shadow: inset 0 0 20px #000000;
 }
 
 .profile-li h2 {
   width: 100%;
-  font-size: 3.5vw;
+  font-size: 2.7vw;
   font-weight: 400;
   line-height: 2em;
   color: #fff;
@@ -311,22 +472,37 @@ p {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* LinkedIn Profile Section Media Querry Mobile*/
+/* LinkedIn Profile Section Media Querry Mobile */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 299px) and (max-width: 750px) {
   .profile-li {
-    padding: 5rem 0;
-    line-height: 1.5em;
+    padding: 3rem 0;
+    box-shadow: inset 0 0 0.6px #000000;
   }
 
   .profile-li h2 {
-    font-size: 2vw;
-    padding: 8px;
+    font-size: 6vw;
   }
 
   .profile-li p {
-    font-size: 1.3vw;
-    padding: 15px;
+    font-size: 4.8vw;
+  }
+}
+
+/* LinkedIn Profile Media Querry Tablet */
+
+@media screen and (min-width: 751px) and (max-width: 1025px) {
+  .profile-li {
+    padding: 7rem 0;
+    box-shadow: inset 0 0 0 1px #000000;
+  }
+
+  .profile-li h2 {
+    font-size: 6vw;
+  }
+
+  .profile-li p {
+    font-size: 4vw;
   }
 }
 
@@ -371,21 +547,24 @@ hr.divider {
   transition: ease-in-out 0.3s;
 }
 
-/* Button Media Querry Mobile*/
+/* Button Media Querry Mobile */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 299px) and (max-width: 750px) {
   .button {
-    width: 18vh;
-    padding: 0.1rem 0.2rem;
-    font-size: 0.8rem;
+    width: 25vh;
+    font-size: 0.7rem;
     font-weight: 600;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .profile-gh h2 {
-    font-size: 2rem;
-    line-height: 4em;
+/* Button Media Querry Tablet */
+
+@media screen and (min-width: 751px) and (max-width: 1025px) {
+  .button {
+    width: 20vh;
+    padding: 0.8rem 0.5rem;
+    font-size: 2.2vw;
+    font-weight: 600;
   }
 }
 
@@ -416,12 +595,14 @@ hr.divider {
 
 #boxes .box p {
   font-size: 1.5rem;
+  padding: 0 450px;
   text-align: center;
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* Media Querry Mobile */
-@media screen and (max-width: 768px) {
+/* About Me Media Querry Mobile */
+
+@media screen and (min-width: 299px) and (max-width: 750px) {
   #boxes .box img {
     width: 130px;
   }
@@ -431,8 +612,17 @@ hr.divider {
   }
 
   #boxes .box p {
+    padding: 0 50px;
     font-size: 1.1rem;
     text-align: center;
+  }
+}
+
+/* About Me Media Querry Tablet */
+
+@media screen and (min-width: 751px) and (max-width: 1025px) {
+  #boxes .box p {
+    padding: 0 180px;
   }
 }
 
@@ -440,14 +630,15 @@ hr.divider {
 
 .contact {
   background-image: linear-gradient(
-      15deg,
-      rgba(11, 21, 46, 0.75) 100%,
-      rgba(231, 76, 60, 0.6) 100%
+      rgba(5, 11, 26, 0.75) 100%,
+      rgba(226, 211, 209, 0.6) 100%
     ),
     url(/img/contact.jpg);
   background-position: center;
   background-size: cover;
-  padding: 18rem;
+  background-repeat: no-repeat;
+  padding: 11rem;
+  box-shadow: inset 0 0 10px #000000;
 }
 
 .contact h2 {
@@ -460,18 +651,20 @@ hr.divider {
 }
 
 .contact p {
-  width: 100%;
+  margin: 7px;
   font-size: 1.7rem;
   text-align: center;
+  padding: 0 300px;
   color: rgba(255, 255, 255, 0.7);
   text-shadow: 0.1em 0.1em 0.2em black;
 }
 
 /* Contact Section Media Querry Mobile */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 299px) and (max-width: 750px) {
   .contact {
-    padding: 7rem;
+    padding: 2rem;
+    background-position: right;
   }
 
   .contact h2 {
@@ -480,11 +673,18 @@ hr.divider {
   }
 
   .contact p {
+    padding: 0 20px;
     font-size: 1.5rem;
+    text-align: center;
   }
 }
 
 /* Contact Info Section */
+
+.cont-info {
+  display: table;
+  margin: 0 auto;
+}
 
 .cont-info p {
   width: 100%;
@@ -501,9 +701,24 @@ hr.divider {
 
 /* Contact Info Media Querry Mobile */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 299px) and (max-width: 750px) {
   .cont-info p {
+    margin: 0 auto;
+    text-align: center;
     font-size: 1.2rem;
+  }
+}
+
+/* Contact Info Media Querry Tablet */
+
+@media screen and (min-width: 751px) and (max-width: 1025px) {
+  .contact {
+    padding: 9rem;
+    margin: 0 auto;
+  }
+
+  .contact p {
+    padding: 0 40px;
   }
 }
 
@@ -520,4 +735,14 @@ hr.divider {
   text-shadow: 0em 0em 0em black;
   background: #212529;
   border-top: 4px solid #e74c3c;
+}
+
+/* Footer Media Querry Mobile*/
+
+@media screen and (min-width: 299px) and (max-width: 750px) {
+  #main-footer {
+    height: 60px;
+    padding: 50px;
+    font-size: 0.7rem;
+  }
 }

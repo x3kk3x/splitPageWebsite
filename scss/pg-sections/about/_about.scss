@@ -1,37 +1,62 @@
 .container {
-  width: 100%;
-  padding: 7rem 0;
-  background-color: #192a56;
+  max-width: 100%;
+  height: 55vh;
+  background-color: $ebony-clay;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  .boxes {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    .box {
+      text-align: center;
+      padding: 1.25em;
+      h2 {
+        font-size: 2vw;
+        font-weight: 600;
+        color: $athens-gray;
+        padding: 0.5em 0;
+        text-shadow: 4px 3px 0px $plain-black, 9px 8px 0px rgba(0, 0, 0, 0.15);
+      }
+      img {
+        width: 15.5vw;
+        cursor: pointer;
+        -webkit-transition: -webkit-transform 0.8s ease-in-out;
+        transition: transform 0.9s ease-in-out;
+        &:hover {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      .box-txt {
+        width: 27vw;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.4vw;
+        font-weight: 400;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
+  }
 }
 
-.boxes .box {
-  text-align: center;
-  padding: 20px;
-}
+// Media Query
 
-.boxes .box img {
-  width: 200px;
-}
-
-.box h2 {
-  font-size: 2rem;
-  font-weight: 500;
-  color: #fff;
-  text-shadow: 0.1em 0.1em 0.2em black;
-}
-
-.boxes .box p {
-  font-size: 1.5rem;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-@media screen and (max-width: 760px) {
-  .boxes .box,
-  .boxes .box img {
-    width: 75%;
-    margin-right: 20px;
-    display: inline-block;
+@media screen and (min-width: 320px) and (max-width: 1367px) {
+  .boxes {
+    .box {
+      width: 75%;
+      margin: 0;
+      display: inline-block;
+      img {
+        width: 75%;
+        margin-right: 1.25em;
+        display: inline-block;
+      }
+    }
   }
 }

@@ -1,5 +1,60 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+// Color Variables
+
+$primary-color: #e74c3c;
+$secondary-color: #f1f2f6;
+$plain-white: #fff;
+$ghost-white: #f5f6fa;
+$athens-gray: #f1f2f6;
+$cinnabar: #dd3927;
+$biscay: #192a56;
+$ming: #3e6b89;
+$carribean-green: #06d6a0;
+$candlelight: #fcd425;
+$plain-black: #000;
+$ebony-clay: #1e272e;
+$mine-shaft: #222;
+$tamarind: #331621;
+$voljaco: #0984e3;
+// Custom Scrollbar
+
+::-webkit-scrollbar {
+  width: 1.2em;
+}
+
+::-webkit-scrollbar-track {
+  border: 0.8em solid $mine-shaft;
+  box-shadow: inset 0 0 2.5px 2px rgba (0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 1em;
+}
+
+// Media Querry
+
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
 }

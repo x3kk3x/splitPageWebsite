@@ -3,53 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Split-Page</title>
+    <title>x3kk</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Piedra&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/dist/icons/window-icon/window-icon.png" />
+    <script
+      src="https://kit.fontawesome.com/787b796f8a.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="/dist/css/style.css" />
-       <script
-       src="https://code.jquery.com/jquery-3.5.1.js"
-       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-       crossorigin="anonymous">
-       </script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
-    <link rel="icon" href="/icons/layout.png" />
   </head>
   <body>
-    <!-- Header Starts -->
-    <!-- <header class="mobile-menu">
-      <div class="menu">
-        <nav>
-            <div class="logo">Welcome</div>
-            <ul>
-                <li>
-                  <a href="#short-bio">Biography
-                  </li>
-                <li>
-                  <a href="#about">About
-                  </li>
-                <li>
-                  <a href="#linkedIn">Work
-                  </li>
-                <li>
-                  <a  href="#reach-me">Contact
-                  </li>
-            </ul>
-        </nav>
+    <!-- Navbar Starts -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="logo">
+          <span class="navbar-header">Hello</span>
+        </div>
+        <ul>
+          <li>
+            <a href="#split-page">Home</a>
+          </li>
+          <li>
+            <a href="#biography">Bio</a>
+          </li>
+          <li>
+            <a href="#technologies">Tech's</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
-    </header> -->
-    <!-- Header Ends-->
-    
+    </nav>
     <!-- Split Page Starts-->
-    <section id="wrapper" class="skewed">
+    <section id="split-page" class="skewed">
       <div class="layer bottom">
         <div class="content-wrap">
           <div class="content-body">
             <h1>Welcome</h1>
-            <p>
-              I'm sure our forefathers would be proud to know that 5 years later we'd be doing the exact 
-              same thing they were doing.
-              And that, also we got, uhh... <br> 
-              Hey, what's that flashing button?
-            </p>
+            <span class="split-text">My name is Danijel</span>
+            <span class="split-text">and i'm a Front-End Developer.</span>
+            <span class="split-text">And uhh...</span>
+            <span class="split-text">This sentence is not known!</span>
           </div>
           <img src="img/Split-Page/black-bg-photo.png" alt="" />
         </div>
@@ -58,118 +61,237 @@
         <div class="content-wrap">
           <div class="content-body">
             <h1>Hearty</h1>
-              <p>Well, Good day, everybody... </p>
-              <p>Welcome to Day <span style="color: #f3321d" id="release-date"></span> aboard the Visual Studio Code Planet...</p>
-               <p> As always, the weather is a balmy 24 degrees celsius and sunny! </p>
-               </p>
-              </p>
+            <span class="split-text">
+              Welcome to Day ‏‏‎
+              <span style="color: #f3321d;" id="release-date"></span>
+            </span>
+            <span class="split-text"
+              >Aboard the Visual Studio Code Planet!</span
+            >
+            <span class="split-text">
+              The weather is a balmy 48 degrees Celsius and sunny!
+            </span>
           </div>
-          <img class="pic-one" src="./img/Split-Page/white-bg-photo.png" alt="" />
+          <img
+            class="pic-one"
+            src="./img/Split-Page/white-bg-photo.png"
+            alt=""
+          />
         </div>
       </div>
       <div class="handle"></div>
     </section>
     <!-- Split Page Ends!-->
 
-    <!-- Image Slider -->
-    <!-- <div class="carousell">
-      <div class="slider-outer">
-        <img src="/img/Carousell/arrow-left.png" class="prev" alt="Prev">
-        <div class="slider-inner">
-          <img src="img/Carousell/coding-a.jpg" class="first-img">
-          <img src="img/Carousell/coding-b.jpg">
-          <img src="img/Carousell/coding-c.jpg">
-          <img src="img/Carousell/coding-d.jpg">
-          <img src="img/Carousell/coding-e.jpg" class="last-img">
-        </div>
-        <img src="/img/Carousell/arrow-right.png" class="next" alt="Next">
-      </div>
+    <!-- Tablet/Mobile Banner -->
+    <!-- <div class="parallax">
+      <h1>Hearty</h1>
+      <span class="split-text">
+        Welcome to Day ‏‏‎
+        <span style="color: #f3321d;" id="release-date"></span>
+      </span>
+      <span class="split-text">Aboard the Visual Studio Code Planet!</span>
+      <span class="split-text">
+        The weather is a balmy 48 degrees Celsius and sunny!
+      </span>
     </div> -->
-  
-    <!-- Biography Section Starts-->
-    <div id="short-bio" class="bio">
-      <h2 class="bio-h2">Short Biography</h2>
-      <hr class="divider" />
-      <p>
-        I have great interest in the field of software development.
-        Good and growing theoretical knowledge, necessary skills, and also great
-        potential to develop over time and become a quality software
-        developer. <span id="dots"></span><span id="more">
-        My motivation is my desire, my passion, which is paving my path
-        before me. It keeps me driven and helps me to focus my life in the
-        field of software development and am ready to actively develop in
-        that direction throughout my life. While studying at the IT
-        Academy, I had the opportunity to develop my technical skills needed
-        to work in this profession.
-        Working on different projects during my studies allowed me to learn
-        from mistakes and made me sure  I won't give in to errors but rather
-        grow a bit taller because of them.</span>
-      </p>
-      <button type="button" id="read" onclick="read()">Read More</button>
-    </div>
-     <!-- Biography Section Ends-->
+    <!-- Slider Section Starts-->
+    <section id="biography">
+      <main class="bio-active">
+        <div class="modal">
+          <div class="nav default-color">
+            <div class="next nav-icon">
+              <svg
+                fill="#ececec"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z" />
+                <path d="M0-.25h24v24H0z" fill="none" />
+              </svg>
+            </div>
+            <div class="prev nav-icon">
+              <svg
+                fill="#ececec"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z" />
+                <path d="M0-.5h24v24H0z" fill="none" />
+              </svg>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="circ">
+              <div class="circ3 default-color"></div>
+              <div class="circ2"></div>
+              <div class="circ1 default-color"></div>
+            </div>
+            <div class="content">
+              <div class="tt">
+                <h1 class="content-title"></h1>
+                <p class="content-desc"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <!-- Slider Section Ends-->
 
-      <!-- LinkedIn Profile Section Starts-->
-    <div id="linkedIn" class="profile-li">
-      <h2>Checkout My LinkedIn Profile</h2>
-      <hr class="divider" />
-      <p>
-        There you can learn a bit more about me!
-      </p>
-      <a class="button" href="https://www.linkedin.com/in/danijelvanjo/">Go To LinkedIn</a>
-    </div>
-    <!-- LinkedIn Profile Section Ends-->
-  
-    <!-- About Me - Section Starts-->
-    <div id="about" class="container">
-    <section class="boxes">
+    <!-- About Me Section Starts-->
+    <section class="container">
+      <div class="boxes">
         <div class="box">
-          <img src="./icons/book.svg" />
-          <h2>I Am</h2>
-          <p>
-            Self-motivating, flexible, easy going and ready to adapt to any life
-            changes and embrace any challenges!
-          </p>
+          <img src="./icons/about-icons/laptop.svg" />
+          <h2>Structure</h2>
+          <span class="box-txt">
+            I value simple content structure, clean design patterns, and
+            thoughtful interactions!
+          </span>
         </div>
         <div class="box">
-          <img src="./icons/laptop.svg" />
-          <h2>Motivated</h2>
-          <p>
-            Ready to relocate, work remotely and hard. Learn anything along the way.
-            Eager to find a place where I can grow and improve!
-          </p>
+          <img src="./icons/about-icons/book.svg" />
+          <h2 class="bounce">Motivated</h2>
+          <span class="box-txt">
+            Eager to find a place where I can grow, improve, and learn
+            everything along the way!
+          </span>
         </div>
         <div class="box">
-          <img src="./icons/heart.svg" />
-          <h2>Coding With Love</h2>
-          <p>
-            Spoonful of smiles, a jar of joy and a cup
-            of coffee will make any software created, created with LOVE!
-          </p>
+          <img src="./icons/about-icons/heart.svg" />
+          <h2>Coding</h2>
+          <span class="box-txt">
+            I like to code things from scratch, and enjoy bringing ideas to life
+            in the browser!
+          </span>
         </div>
       </div>
     </section>
-    <!-- About Me - Section Ends-->
+    <!-- About Me Section Ends-->
 
-    <!-- Contact Section Starts-->
-    <div id="reach-me" class="contact">
-      <h2>Let's Get In Touch!</h2>
-      <p>While i'm pretty good with smoke signals there are simpler
-        ways to get in touch with me and for me to answer you ANY question
-        you may have!
-      </p>
-      <div class="cont-info">
-      <p>(+381) 62-1022-143</p>
-      <p>danijel.vanjo@gmail.com</p>
-     </div>
+    <!-- Card Section Starts -->
+    <section id="technologies">
+      <div class="card-container">
+        <div class="card-post">
+          <div class="card-post-img">
+            <img src="/dist/img/Card/card-image.png" />
+          </div>
+          <div class="card-post-info">
+            <span class="card-post-title">Technologies</span>
+            <div class="icon-container">
+              <img src="icons/card-icons/html5.png" title="HTML5" />
+              <img src="icons/card-icons/javascript.png" title="javaScript" />
+              <img src="icons/card-icons/sass.png" title="SASS" />
+            </div>
+            <div class="icon-container-sc">
+              <img src="icons/card-icons/github.png" title="Github" />
+              <img src="icons/card-icons/css3.png" title="CSS3" />
+              <img src="icons/card-icons/gulp.png" title="Gulp.js" />
+            </div>
+            <div class="icon-container-th">
+              <img src="icons/card-icons/figma.png" title="Figma" />
+              <img src="icons/card-icons/npm.png" title="npm" />
+              <img src="icons/card-icons/photoshop.png" title="Photoshop" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Card Section Ends -->
+
+    <!-- Footer Section Starts-->
+    <section id="contact">
+      <div class="footer">
+        <div class="inner-footer">
+          <div class="logo-container">
+            <img src="/dist/icons/logo-icon/logo.png" />
+          </div>
+          <div class="footer-md-text">
+            <span class="logo-text">
+              Handcrafted by me.
+            </span>
+            <span class="logo-text">
+              Technologies used on this website:
+            </span>
+            <span class="logo-text">
+              HTML5, Sass, javaScript, npm and Gulp.
+            </span>
+          </div>
+          <div class="footer-icons-container">
+            <h3>Contact Me</h3>
+            <div class="social-container">
+              <a href="https://www.linkedin.com/in/danijelvanjo/">
+                <i class="fab fa-linkedin" title="LinkedIn"></i>
+              </a>
+              <a href="https://github.com/x3kk3x">
+                <i class="fab fa-github-square" title="Github"></i>
+              </a>
+              <a href="https://twitter.com/x3kk3x/">
+                <i class="fab fa-twitter-square" title="Twitter"></i>
+              </a>
+              <a href="https://gmail.com">
+                <i
+                  class="fas fa-envelope-square"
+                  title="danijel.vanjo@gmail.com"
+                ></i>
+              </a>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <span class="bottom">All Rights Reserved</span>
+            <span class="bottom">Danijel Vanjo</span>
+            <span class="bottom">&copy 2020</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Ends -->
+
+    <!-- Waves Section Starts -->
+    <div>
+      <svg
+        class="waves"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28"
+        preserveAspectRatio="none"
+        shape-rendering="auto"
+      >
+        <defs>
+          <path
+            id="gentle-wave"
+            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+          />
+        </defs>
+        <g class="parallax">
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="0"
+            fill="rgba(255,255,255,0.7"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="3"
+            fill="rgba(255,255,255,0.5)"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="5"
+            fill="rgba(255,255,255,0.3)"
+          />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+      </svg>
     </div>
-    <!-- Contact Section Ends-->
-
-    <!-- Footer-->
-    <footer id="main-footer">
-      Copyright &copy; 2020
-    </footer>
-     <!-- Footer Ends-->
+    <!--Waves Section end-->
 
     <script src="/dist/main.js"></script>
   </body>
